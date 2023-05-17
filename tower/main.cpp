@@ -1,10 +1,18 @@
 #include <iostream>
-#include "tower.h"
-#include "tower.cpp"
 using namespace std;
+
+#include "Exp.h"
+#include "Exp.cpp"
 int main() {
-	Tower myTower; // 1 미터
-	Tower seoulTower(100); // 100 미터
-	cout << "높이는 " << myTower.getHeight() << "미터" << endl;
-	cout << "높이는 " << seoulTower.getHeight() << "미터" << endl;
+	exp a(3, 2); 
+	exp b(9); 
+	exp c; 
+
+	cout << a.getValue() << ' ' << b.getValue() << ' ' << c.getValue() << endl;
+	cout << "a의 베이스 " << a.getBase() << ',' << "지수 " << a.getExp() << endl;
+
+	if(a.equals(b)) 
+		cout << "same" << endl;
+	else
+		cout << "not same" << endl;
 }
