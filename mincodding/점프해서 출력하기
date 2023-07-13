@@ -1,0 +1,11 @@
+ // 링크 https://pro.mincoding.co.kr/problem-step/1/level/6/detail/G1LV03_5_%EC%A0%90%ED%94%84%ED%95%B4%EC%84%9C
+
+#include <iostream>
+using namespace std;
+int main() {
+
+	int num1;
+	cin >> num1;
+	for (int i = num1 + 2; i < num1 + 5; i++)
+		cout << i << " ";
+}
